@@ -6,7 +6,7 @@ Ponsify is a simple test for software engineers.
 The scope of this test is to assess the candidate's basic knowledge of software engineering principles, their ability to learn, work in a team and follow instructions.
 
 ## Problem Definition
-Implement a function `ponsify` that sums all the integers from the first parameter, the lower limit; to the second parameter, the upper limit (both inclusive); going in steps expressed as the third parameter.
+Implement a function `ponsify(lowerLimit, upperLimit, step)` that sums all the integers from the first parameter, the lower limit; to the second parameter, the upper limit (both inclusive); going in steps expressed as the third parameter.
 
 ```
 	ponsify(1, 10, 1) // should return the sum of 1+ 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 
