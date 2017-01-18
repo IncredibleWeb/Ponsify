@@ -9,7 +9,7 @@ describe('Ponsify', function() {
     });
     it('should return X when the lower limit and upper limit are equal to X', function() {
         assert.equal(3, ponsify(3, 3, 3));
-        assert.equal(3, ponsify(3, 3, 3));
+        assert.equal(2, ponsify(2, 2, 1));
         assert.equal(1, ponsify(1, 1, 4));
     });
     it('should return 0 when the upper limit is less than the lower limit', function() {
