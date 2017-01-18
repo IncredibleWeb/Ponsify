@@ -20,7 +20,8 @@ You can assume that both the upper and lower limit are positive integers.
 ## Instructions
 - Fork the repository using your own GitHub account.
 - Give collaborator access to your interviewer(s) (using their email address).
-- Your changes must be in the JavaScript files in the /src folder.
+- Run `npm install` on the root directory to install any dependencies.
+- You may implement your solution in `main.js` in the `/src` folder.
 - Run the command `gulp` to minify & prepare your solution. If it fails, your JavaScript most likely has a syntax error.
 - Run the command `npm test` to validate your solution. If not all tests are passed then your solution is not complete. If the tests are passed then your solution is returning the correct result; however you will also be assesed on the method.
 - When you are satisfied, commit and push your changes and create a pull request and assign your interviewer.
