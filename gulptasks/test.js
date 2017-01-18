@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     config = require('../gulpconfig.json'),
     mocha = require('gulp-mocha');
 
-gulp.task('test', function() {
+gulp.task('test', ['scripts'], function() {
     return gulp.src(config.paths.test + 'test.js', { read: false })
         .pipe(mocha({ reporter: 'spec' }))
 });
