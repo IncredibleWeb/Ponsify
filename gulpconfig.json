@@ -1,0 +1,6 @@
+{
+    "paths": {
+        "js": "src/",
+        "jsBuild": "dist/"
+    }
+}
