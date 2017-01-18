@@ -15,7 +15,7 @@ Implement a function `ponsify(lowerLimit, upperLimit, step)` that sums all the i
 	ponsify(3, 3, 2) // should return 3
 ```
 
-You can assume that both the upper and lower limit are positive integers.
+You may assume that both the upper, lower limit and step are all positive integers.
 
 ## Instructions
 - Fork the repository using your own GitHub account.
