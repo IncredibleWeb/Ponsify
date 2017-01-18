@@ -24,8 +24,7 @@ You may assume that both the upper, lower limit and step are all positive intege
 - Give collaborator access to your interviewer(s) (using their email address).
 - Run `npm install` on the root directory to install any dependencies.
 - You may implement your solution in `main.js` in the `/src` folder.
-- Run the command `gulp` to minify & prepare your solution. If it fails, your JavaScript most likely has a syntax error.
-- Run the command `npm test` to validate your solution. If not all tests are passed then your solution is not complete. If the tests are passed then your solution is returning the correct result; however you will also be assesed on the method.
+- Run the command `gulp` to minify, prepare your solution and run any tests. If not all tests are passed then your solution is not complete. If the tests are passed then your solution is returning the correct result; however you will also be assesed on the method.
 - When you are satisfied, commit and push your changes and create a pull request and assign your interviewer.
 
 ## Prerequisites
