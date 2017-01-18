@@ -1,6 +1,7 @@
 {
     "paths": {
         "js": "src/",
-        "jsBuild": "dist/"
+        "jsBuild": "dist/",
+        "test": "test/"
     }
 }
