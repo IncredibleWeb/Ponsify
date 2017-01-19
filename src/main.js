@@ -1,16 +1,15 @@
 (function () {
     function ponsify(x, y, z) {
         if (x > y) {
-            console.log("The lower and upper limits are invalid!");
             return 0;
+        } else if (x == y) {
+            return x;
         } else {
-            var sum = 0;
-            for (x; x <= y; x += z) {
-                sum += x;
-            }
-            console.log("The sum is: " + sum);
+            var terms = Math.floor((y - x) / z) + 1;
+            var sum = (terms / 2) * (2 * x + (terms - 1) * z);
             return sum;
         }
+
         return -1;
     }
 
