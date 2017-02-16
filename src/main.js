@@ -1,24 +1,23 @@
 (function() {
 
     function ponsify(lowerLimit, upperLimit, step) {
-		if(lowerLimit == upperLimit)
-		{
-			return lowerLimit;
-		}
-		else if(lowerLimit > upperLimit)
+		if(lowerLimit > upperLimit)
 		{
 			return 0;
 		}
-		else if(lowerLimit > 0 && upperLimit > 0 && step > 0) //the sum does not happen when negative numbers are used
+		else
 		{
-			var total = 0;
-			while(lowerLimit <= upperLimit)
+			if(lowerLimit <= upperLimit)
 			{
-				total = total + lowerLimit;
-				lowerLimit = lowerLimit + step;
+				if(lowerLimit == upperLimit)
+				{
+					return lowerLimit;
+				}
+				else
+				{
+					return lowerLimit + ponsify((lowerLimit+step), upperLimit, step);
+				}
 			}
-			
-			return total;
 		}
     }
     
