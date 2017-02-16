@@ -1,9 +1,24 @@
 (function() {
 
-    function ponsify(x, y, z) {
-        // Add your code here
-        console.log("Hello world!");
-        return -1;
+    function ponsify(lowerLimit, upperLimit, step) {
+		if(lowerLimit > upperLimit)
+		{
+			return 0;
+		}
+		else
+		{
+			if(lowerLimit <= upperLimit)
+			{
+				if(lowerLimit == upperLimit)
+				{
+					return lowerLimit;
+				}
+				else
+				{
+					return lowerLimit + ponsify((lowerLimit+step), upperLimit, step);
+				}
+			}
+		}
     }
     
     // required to export for tests
