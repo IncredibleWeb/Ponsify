@@ -3,8 +3,8 @@
     function ponsify(x, y, z) {
         // Add your code here
     	var c = 0
-    	for (var i = x; i <= y; i=i+z){
-    		c = c + i;
+    	for (var i = x; i <= y; i+=z){
+    		c += i;
     	}
     	
         console.log("Hello world!");
