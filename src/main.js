@@ -2,6 +2,8 @@
 
     function ponsify(x, y, z) {
         // Add your code here
+	    
+	    if(x > y) {return 0;}
     	var numStep = Math.floor((y - x)/z) + 1;
 		console.log("numStep " + numStep);
 		var rectangle = x * numStep;
