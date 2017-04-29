@@ -1,5 +1,4 @@
 (function() {
-	
 	/**
 	 * A Test function that sums all the integers from the first parameter, 
 	 * the lower limit; to the second parameter, the upper limit (both inclusive);
@@ -20,14 +19,13 @@
 	 * @return{Number} If x <= y, sum the numbers from x to y at step z, otherwise it returns 0
 	 */
     function ponsify(x, y, z) {
-        // variable of return value
-		out_val = 0;
-		// iterator for calculate the value of return
-		for (i = x; i <= y; i += z){
-				out_val += i;
+		if((x,y,z) > 0 && x <= y){			// Checks passed parameters
+			n = Math.floor((z - x + y) / z);// Calculates the number of lesser or equal y words that make up the progression
+			an = (x + (n - 1) * z);			// Calculate nth term of the sequence
+			return ((1/2 )* n * (x + an));	// Calculate and return the sum of arithmetic progression
 		}
-		// return the value calculated
-		return out_val;
+		
+		return 0;							// Returns 0 if x is greater than y and if or x or y or z is less than 0
     }
     
     // required to export for tests
