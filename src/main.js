@@ -12,9 +12,8 @@
 
         for( var i = lowerLimit; i <= ( upperLimit - step ); i += step ) {
 
-            var m = i + step;
-            
-            total += m; 
+            total += i + step;
+
         }
 
         return total;
