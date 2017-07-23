@@ -4,7 +4,6 @@
         // Add your code here
         //console.log("Hello world!");
 		var numbers = x,sum = 0, count=0;
-
 			while(numbers <= y){
 				console.log(numbers);
 				console.log("");
