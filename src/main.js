@@ -2,19 +2,12 @@
 
     function ponsify(x, y, z) {
         // Add your code here
-        var sum=0;
-		if(x>y){
-			return 0;
-		}
-		else if(x==y) {
-			return x;
-		}
-		else{
-			for (i = x; i <= y; i+=z) {
-				sum+=i;
-			}
-			return sum;
-		}
+        var sum = 0;
+	var n = (y-x+z)/z;
+	var nInt = parseInt(n);
+	var tmp = 2*x+(nInt-1)*z;
+	sum=tmp*nInt/2;
+	return sum;
     }
     
     // required to export for tests
