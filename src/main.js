@@ -19,7 +19,7 @@
       }
 
       var sum = 0;
-      for (x; x < y; x+=z){
+      for (x; x <= y; x+=z){
         sum = x + sum;
       }    
       return sum;
