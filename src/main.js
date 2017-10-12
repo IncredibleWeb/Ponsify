@@ -2,9 +2,9 @@
 
     function ponsify(x, y, z) {
         
-    if (x < 0 || y < 0 || x == null || y == null){
-        return 0;
-    }
+	if (x < 0 || y < 0 || x == null || y == null){
+		return 0;
+	}
 
 	if (x > y){
 		return 0;
