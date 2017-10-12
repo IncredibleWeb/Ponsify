@@ -2,27 +2,23 @@
 
     function ponsify(x, y, z) {
         
-      if (x < 0 || y < 0){
+    if (x < 0 || y < 0 || x == null || y == null){
         return 0;
-      }
+    }
 
-      if(x == null || y == null){
-        return 0;
-      }
+	if (x > y){
+		return 0;
+	}
 
-      if (x > y){
-        return 0;
-      }
+	if (x == y){
+		return x;
+	}
 
-      if (x == y){
-        return x;
-      }
+	var n   = y / z;
+	var an  = x + (n - 1) * z;
+	sum     = n * (x + an) / 2;
 
-      var sum = 0;
-      for (x; x <= y; x+=z){
-        sum = x + sum;
-      }    
-      return sum;
+	return sum;
  
     }
     
