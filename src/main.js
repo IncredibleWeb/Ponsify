@@ -20,8 +20,7 @@
                 counter++;
                 if(counter == z){
                     counter =0;
-                    result += box[j];
-                    console.log(box[j])
+                    result += box[j];                    
                 }
             }
             result +=box[0];
