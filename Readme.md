@@ -1,4 +1,4 @@
-ubl# Ponsify
+# Ponsify
 
 Ponsify is a simple test for software engineers.
 
