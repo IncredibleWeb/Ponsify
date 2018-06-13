@@ -21,6 +21,7 @@
     "require-dir": "^0.3.0"
   },
   "scripts": {
+    "build": "gulp",
     "test": "./node_modules/mocha/bin/mocha --reporter spec"
   }
 }
