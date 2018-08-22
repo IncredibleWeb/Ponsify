@@ -1,16 +1,11 @@
 (function() {
 
     function ponsify(x, y, z) {
-        if(x > y) {
-            return 0;
+        var sum = 0;
+        for(var i = x; i <= y; i += z) {
+            sum += i;
         }
-        else {
-            var sum = 0;
-            for(var i = x; i <= y; i += z) {
-                sum += i;
-            }
-            return sum;
-        }
+        return sum;
     }
     
     // required to export for tests
