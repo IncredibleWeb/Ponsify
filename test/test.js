@@ -15,4 +15,9 @@ describe('Ponsify', function() {
     it('should return 0 when the upper limit is less than the lower limit', function() {
         assert.equal(0, ponsify(4, 3, 2));
     });
+    //edge case (in case number is no longer an integer)
+    it('should return X when the number contains decimal points', function () {
+        assert.equal(4.5, ponsify(0.5, 1.0, 0.1));
+        assert.equal(0.5, ponsify(0.5, 1.0, 1));
+    });
 });
