@@ -3,23 +3,21 @@
     function ponsify(lowerLimit, upperLimit, step) {
         
         var numberArray = [];
-        var total = 0;
         
         if (lowerLimit <= upperLimit) {
-            for (i = lowerLimit; i <= upperLimit; i += step) {
-                numberArray.push(i);
-            }
-    
-            /* Using the forEach array method, the total is
-               obtained by adding the value of every integer 
-               in the array to the empty variable 'total' */
 
-            for (j = 0; j < numberArray.length; j++) {
-                total += numberArray[j];
-            }
+            // To find the amount of integers which lie between the lower limit and the upper limit using the given step
+            var n = Math.floor((upperLimit - lowerLimit) / step);
+
+            // Using the formula for the sum of an arithmetic sequence:
+            // Sum = (n/2)(firstTerm + lastTerm)
+            // In this case n should be added by 1 to include for the lower limit.
+            var total = ((n+1)/2) * (lowerLimit + (lowerLimit + (n * step)));
+            return total; 
+
+        } else {
+            return 0;
         }
-
-        return total;
     }
 
     // required to export for tests
